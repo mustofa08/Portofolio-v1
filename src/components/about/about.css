@@ -1,0 +1,144 @@
+.about__container{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    /* align-items: center; */
+    column-gap: 2rem;
+}
+
+
+.about__data{
+    padding: 1.875rem;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    /* grid-template-columns: repeat(2, 1fr); */
+    column-gap: 1.875rem;
+    align-items: flex-start;
+    position: relative;
+}
+
+.about__data::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid var(--container-color);
+    position: absolute;
+    left: 0.93rem;
+    top: 20%;
+}
+
+.about__img{
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.about__description{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* .about__skills{
+    row-gap: 1.25rem;
+}
+
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__number{
+    line-height: 1.2;
+}
+
+.skills_bar,
+.skills__precentage{
+    height: 7px;
+    border-radius: 0.25 rem;
+}
+
+.skills__bar{
+    background-color: #f1f1f1;
+}
+
+.skills__precentage{
+    display: block;
+}
+
+.a{
+    width: 90%;
+    background-color: rgb(225, 209, 92);
+}
+
+.b{
+    width: 30%;
+    background-color: rgb(225, 76, 92);
+}
+
+.c{
+    width: 70%;
+    background-color: rgb(108, 108, 299);
+} */
+
+.about__boxes{
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.875rem;
+    margin-top: 4.35rem;
+}
+
+.about__box{
+    display: flex;
+    column-gap: 24px;
+}
+
+/* .about__icon{
+    font-size: var(--h1-font-size);
+    color: #dedeea;
+} */
+
+.about__title{
+    font-size: 1.875rem;
+}
+
+
+/* ============ icon ============== */
+
+.tech .section__title {
+  text-align: center;
+}
+
+.tech__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.tech__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tech__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.tech__name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  /* color: var(--text-color); */
+}
+
